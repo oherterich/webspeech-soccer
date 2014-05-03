@@ -1,0 +1,240 @@
+* { margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#login {
+  width: 100%;
+  height: 100%;
+  color: #f9f9f9;
+}
+
+#login div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2%;
+}
+
+#login h1 {
+  font-weight: normal;
+  font-size: 4.0rem;
+}
+
+#login input {
+  width: 500px;
+  height: 90px;
+  margin: 3%;
+  font-size: 3.6rem;
+  text-align: center;
+  color: #444;
+}
+
+#name h1 {
+    padding-top: 20%;
+}
+
+#team h1 {
+    padding-top: 10%;
+}
+
+#team div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 0;
+  margin: 3%;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+#team h2 {
+  font-size: 2.0rem;
+  font-weight: normal;
+  padding-top: 37%;
+  text-align: center;
+}
+
+#team h3 {
+  margin: 3% 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #444;
+}
+
+#team1-button {
+  background: #FFFF00;
+  color: #333;
+}
+
+#team2-button {
+  background: #00FF00;
+  color: #333;
+}
+
+#start h1 {
+  padding-top: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#div_start {
+	width: 50px;
+	height: 50px;
+}
+
+#start_button {
+	width: 100px;
+	height: 100px;
+  border: none;
+  background: #f9f9f9;
+  border-radius: 100px;
+  margin-top: 5%;
+  transition: width 0.2s, height 0.2s, background 0.2s;
+}
+
+#start_button:hover {
+  width: 120px;
+  height: 120px;
+  background: #eeeeee;
+  transition: width 0.2s, height 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+#results p {
+  display: inline;
+}
+
+.team {
+  padding: 1.0%;
+  width: 11%;
+  position: absolute;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.team h3 {
+  text-align: center;
+  font-size: 4.0rem;
+  padding: 5% 0;
+}
+
+.team h4 {
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 5% 0;
+}
+
+.team div {
+  margin: 12% 0;
+  height: 400px;
+  overflow: auto;
+}
+
+.team div p {
+  margin: 5px 0;
+}
+
+#team1 {
+  left: 2.5%;
+}
+
+#team1 h3 {
+  background: #FFFF00;
+}
+
+#team2 {
+  right: 2.5%;
+}
+
+#team2 h3 {
+  background: #00FF00;
+}
+
+#interim_span {
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 800px;
+  margin-left: -400px;
+  width: 800px;
+  text-align: center;
+  font-size: 3.0rem;
+  color: #999;
+}
+
+#final_span {
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 400px;
+  margin-left: -200px;
+  width: 400px;
+  text-align: center;
+  font-size: 3.0rem;
+  color: #333;
+}
+
+#field {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -400px;
+  background: #6ADE7A;
+}
+
+#ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background: #eee;
+}
+
+.goal {
+  position: absolute;
+  background-color: #333;
+  width: 10px;
+  height: 150px;
+}
+
+#team1-goal {
+  top: 175px;
+  left: 0;
+}
+
+#team2-goal {
+  top: 175px;
+  right: 0;
+}
+
+#goal-scored {
+  text-align: center;
+  font-size: 2.0rem;
+  margin-top: 225px;
+}
+
+#timer {
+  position: absolute;
+  width: 100%;
+  top: 3%;
+  color: #888;
+  text-align: center;
+  margin: ;
+}

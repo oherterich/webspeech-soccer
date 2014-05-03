@@ -1,0 +1,94 @@
+<html>
+	<head>
+    <title>BALL</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+    <section id="login" class="visible">
+      <div id="name" class="visible">
+        <h1>HEY! WHAT'S YOUR NAME?</h1>
+        <input id="name-input" type="text">
+      </div>
+      <div id="team" class="hidden">
+        <h1>OH, HI <span id="user-name"></span>.<br/>PICK A TEAM!</h1>
+        <div id="team1-button">
+          <h2>TEAM 1</h2>
+          <h3><span id="team1-initplayers"></span> PLAYERS</h3>
+        </div>
+        <div id="team2-button">
+          <h2>TEAM 2</h2> 
+          <h3><span id="team2-initplayers"></span> PLAYERS</h3>
+        </div>
+      </div>
+  		<div id="start" class="hidden">
+        <h1>ALRIGHT, <span id="user-team"></span>. NICE!<br/>CLICK THIS BUTTON TO LET US HEAR YOUR VOICE.</h1>
+        <button id="start_button" onclick="startButton(event)"></button>
+      </div>
+    </section>
+    <div id="info" class="hidden">
+      <p id="info_start">
+        Click on the microphone icon and begin speaking for as long as you like.
+      </p>
+      <p id="info_speak_now" style="display:none">
+        Speak now.
+      </p>
+      <p id="info_no_speech" style="display:none">
+        No speech was detected. You may need to adjust your <a href=
+        "//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">microphone
+        settings</a>.
+      </p>
+      <p id="info_no_microphone" style="display:none">
+        No microphone was found. Ensure that a microphone is installed and that
+        <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+        microphone settings</a> are configured correctly.
+      </p>
+      <p id="info_allow" style="display:none">
+        Click the "Allow" button above to enable your microphone.
+      </p>
+      <p id="info_denied" style="display:none">
+        Permission to use microphone was denied.
+      </p>
+      <p id="info_blocked" style="display:none">
+        Permission to use microphone is blocked. To change, go to
+        chrome://settings/contentExceptions#media-stream
+      </p>
+      <p id="info_upgrade" style="display:none">
+        Web Speech API is not supported by this browser. Upgrade to <a href=
+        "//www.google.com/chrome">Chrome</a> version 25 or later.
+      </p>
+    </div>
+    <div id="results" class="visible">
+      <span class="final" id="final_span"></span> <span class="interim" id=
+      "interim_span"></span>
+    </div>
+    <section id="game" class="hidden">
+      <div id="timer"></div>
+      <div id="team1" class="team">
+        <h2>TEAM 1</h2><br/>
+        <h3 id="team1-score">0</h3>
+        <h4><span id="team1-numplayers"></span> PLAYERS</h4>
+        <div id="team1-moves">
+        </div>
+      </div>
+      <div id="team2" class="team">
+        <h2>TEAM 2</h2><br/>
+        <h3 id="team2-score">0</h3>
+        <h4><span id="team2-numplayers"></span> PLAYERS</h4>
+        <div id="team2-moves">
+        </div>
+      </div>
+      <div id="field">
+        <div id="team1-goal" class="goal"></div> <!-- team 2 will be trying to score in team 1's goal -->
+        <div id="team2-goal" class="goal"></div>
+        <div id="goal-scored"></div>
+        <div id="ball"></div>
+      </div>
+    </section>
+
+     <script src="/socket.io/socket.io.js"></script>   <!-- for heroku -->
+    <!-- <script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script> -->  <!-- for working locally -->
+    <script src="js/nodeClient.js"></script>
+		<script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
+	</body>
+</html>

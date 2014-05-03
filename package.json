@@ -1,0 +1,16 @@
+{
+  "name": "webspeech",
+  "version": "0.0.0",
+  "description": "\"Ball game using Web Speech API and Web Sockets\"",
+  "main": "nodeServer.js",
+  "dependencies": {
+    "express": "~3.5.1",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Owen Herterich\"",
+  "license": "ISC"
+}
